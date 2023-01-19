@@ -1,0 +1,49 @@
+import "./style.css";
+import vk from "./../../img/icons/vk.svg";
+import instagram from "./../../img/icons/instagram.svg";
+import twitter from "./../../img/icons/twitter.svg";
+import github from "./../../img/icons/gitHub.svg";
+import linkedIn from "./../../img/icons/linkedIn.svg";
+
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="container">
+        <div className="footer__wraper">
+          <ul className="social">
+            <li className="social__item">
+              <a href="#!">
+                <img src={vk} alt="link" />
+              </a>
+            </li>
+            <li className="social__item">
+              <a href="#!">
+                <img src={instagram} alt="link" />
+              </a>
+            </li>
+            <li className="social__item">
+              <a href="#!">
+                <img src={twitter} alt="link" />
+              </a>
+            </li>
+            <li className="social__item">
+              <a href="#!">
+                <img src={github} alt="link" />
+              </a>
+            </li>
+            <li className="social__item">
+              <a href="#!">
+                <img src={linkedIn} alt="link" />
+              </a>
+            </li>
+          </ul>
+          <div className="copyright">
+            <p>© 2022 https://lukachyk.github.io/My-First-site</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
