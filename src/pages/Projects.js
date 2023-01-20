@@ -10,7 +10,12 @@ const Projects = () => {
           {projects.map((project, index) => {
             // лучше указывать id not (index), для этого проэкта пойдет
             return (
-              <Project key={index} title={project.title} img={project.img} />
+              <Project
+                key={index}
+                title={project.title}
+                img={project.img}
+                index={index}
+              />
             );
           })}
         </ul>
